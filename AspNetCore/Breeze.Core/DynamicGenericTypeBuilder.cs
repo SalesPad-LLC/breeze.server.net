@@ -1,4 +1,4 @@
-﻿/*
+/*
 /// <changelog>
   ///   <item who="jtraband" when="...">Created</item>
   ///   <item who="jtraband" when="Feb-10-2011">Added Equals and GetHashCode impls</item>
