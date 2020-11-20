@@ -170,7 +170,7 @@ namespace Breeze.Core {
       // generates the names T0, T1, T2 ...
       String[] parameterNames = Enumerable.Range(0, info.PropertyNames.Count).Select(i => "T" + i.ToString()).ToArray();
       var parameterBuilders = typBuilder.DefineGenericParameters(parameterNames);
-      return parameterBuilders.Select(pb => pb .AsType()).ToArray();
+      return (Type[])parameterBuilders;
     }
 
     private static void BuildCtor(DynamicTypeInfo info, TypeBuilder typBuilder,
